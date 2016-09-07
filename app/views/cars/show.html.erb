@@ -1,0 +1,11 @@
+<h2><%= @car.make %></h2>
+
+<p>
+  Model: <%= @car.model %>
+</p>
+<p>
+  Year: <%= @car.year %>
+</p>
+
+<%= link_to "Edit this Car", edit_car_path(@car.id) %>
+<%= link_to "Delete this Car", car_path(@car.id), method: :delete %>
